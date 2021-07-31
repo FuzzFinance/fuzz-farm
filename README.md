@@ -1,4 +1,4 @@
-# PanCake Farming 🥞
+# Fuzz Farming 🥞
 
 [![Actions Status](https://github.com/fuzzfinance/fuzz-farm/workflows/CI/badge.svg)](https://github.com/fuzzfinance/fuzz-farm/actions)
 
@@ -8,7 +8,7 @@ https://fuzz.fi. Feel free to read the code. More details coming soon.
 
 ### Harmony Mainnet
 
-- CakeToken - TBD
+- FuzzToken - TBD
 - MasterChef - TBD
 - swapV2Factory - TBD
 - swapV2Router02 - TBD
