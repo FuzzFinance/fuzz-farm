@@ -1,6 +1,6 @@
 pragma solidity 0.6.12;
 
-interface IBEP20 {
+interface IHRC20 {
     /**
      * @dev Returns the amount of tokens in existence.
      */
@@ -22,7 +22,7 @@ interface IBEP20 {
     function name() external view returns (string memory);
 
     /**
-     * @dev Returns the bep token owner.
+     * @dev Returns the HRC token owner.
      */
     function getOwner() external view returns (address);
 
@@ -96,7 +96,7 @@ interface IBEP20 {
 }
 
 
-contract PancakeVoterProxy {
+contract FuzzVoterProxy {
     // SYRUP
     address public constant votes = 0x009cF7bC57584b7998236eff51b98A168DceA9B0;
 
@@ -113,11 +113,11 @@ contract PancakeVoterProxy {
     }
 
     function totalSupply() external view returns (uint256) {
-        return IBEP20(votes).totalSupply();
+        return IHRC20(votes).totalSupply();
     }
 
     function balanceOf(address _voter) external view returns (uint256) {
-        return IBEP20(votes).balanceOf(_voter);
+        return IHRC20(votes).balanceOf(_voter);
     }
 
     constructor() public {}

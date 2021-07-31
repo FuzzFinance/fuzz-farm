@@ -1,9 +1,9 @@
 pragma solidity 0.6.12;
 
-import "@pancakeswap/pancake-swap-lib/contracts/token/BEP20/BEP20.sol";
+import "@fuzzfinance/fuzz-swap-lib/contracts/token/HRC20/HRC20.sol";
 
-// CakeToken with Governance.
-contract CakeToken is BEP20('PancakeSwap Token', 'Cake') {
+// FuzzToken with Governance.
+contract FuzzToken is HRC20('FuzzSwap Token', 'Fuzz') {
     /// @notice Creates `_amount` token to `_to`. Must only be called by the owner (MasterChef).
     function mint(address _to, uint256 _amount) public onlyOwner {
         _mint(_to, _amount);
