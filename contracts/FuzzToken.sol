@@ -19,7 +19,7 @@ import "@openzeppelin/contracts/access/AccessControlEnumerable.sol";
  * roles, as well as the default admin role, which will let it grant both minter
  * and pauser roles to other accounts.
  */
-contract FuzzToken is Context, ERC20("testFuzz", "tFUZZ"), ERC20Burnable, ERC20Pausable, AccessControlEnumerable  {
+contract FuzzToken is Context, ERC20("Fuzz Finance", "FUZZ"), ERC20Burnable, ERC20Pausable, AccessControlEnumerable  {
     bytes32 public constant MINTER_ROLE = keccak256("MINTER_ROLE");
     bytes32 public constant PAUSER_ROLE = keccak256("PAUSER_ROLE");
     
